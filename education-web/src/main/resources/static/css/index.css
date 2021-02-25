@@ -1,0 +1,134 @@
+.text {
+    font-size: 14px;
+}
+
+.item {
+    margin-bottom: 18px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.box-card {
+    width: 100%;
+}
+
+#index {
+    width: 800px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.el-button--success.is-plain:active {
+    background: #f0f9eb !important;
+    border-color: #5daf34 !important;
+    color: #67C23A !important;
+}
+
+.el-button--success.is-plain {
+    border-color: #5daf34 !important;
+}
+
+.el-button--success.is-plain:focus, .el-button--success.is-plain:hover {
+    background: #f0f9eb !important;
+    border-color: #5daf34 !important;
+    color: #67C23A !important;
+}
+
+.el-button--danger.is-plain {
+    border-color: #dd6161 !important;
+}
+
+.el-button--danger.is-plain:active {
+    color: #F56C6C !important;
+    background: #fef0f0 !important;
+    border-color: #dd6161 !important;
+}
+
+.el-button--danger.is-plain:focus, .el-button--danger.is-plain:hover {
+    color: #F56C6C !important;
+    background: #fef0f0 !important;
+    border-color: #dd6161 !important;
+}
+
+.item .el-button {
+    width: 100%;
+    text-align: left !important;
+}
+
+.el-main {
+    /*line-height: 160px;*/
+    height: 800px;
+    padding: 0px;
+}
+
+.el-footer {
+    padding: 0px;
+    /*background-color: #B3C0D1;*/
+    /*color: #333;*/
+    text-align: center;
+    line-height: 60px;
+}
+
+body .el-scrollbar__wrap {
+    overflow-x: hidden;
+}
+
+#index .footer {
+    margin-top: 50px;
+}
+
+#index .footer .footer-description .description{
+    font-family: "Hiragino Sans GB";
+    /*line-height: 1.5;*/
+    font-size: 15px;
+    padding: 0 20px;
+    /*text-indent: 2em;*/
+    /*font-weight: bold;*/
+    /*white-space: pre-line;*/
+}
+
+#index .myButton {
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+    white-space: normal !important;
+}
+
+#index .el-textarea {
+    margin-bottom: 20px !important;
+}
+
+#index .green {
+    color: #5daf34!important;
+}
+#index .red{
+    color: #ff0d0d!important;
+}
+
+#index .el-textarea__innerX textarea {
+    border: 1px solid #dc0000!important;
+}
+
+#index .el-textarea__innerT textarea {
+    border: 1px solid #67c23a!important;
+}
+
+.tops {
+    position: fixed;
+    top: 5px;
+    width: 150px;
+    height: 150px;
+    right: 5px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 75px;
+    line-height: 100px;
+    color: #ff8d00;
+}

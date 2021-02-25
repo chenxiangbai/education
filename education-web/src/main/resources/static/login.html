@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="element/element.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- 引入组件库 -->
+    <script type="text/javascript" src="vue/vue.js"></script>
+    <script type="text/javascript" src="element/element.js"></script>
+</head>
+<body>
+<div id="login">
+
+    <form class="layui-form">
+        <p style="padding:0px;text-align: center;">
+            <el-avatar src="../mao.jpg" :size="60"></el-avatar>
+        </p>
+        <el-divider></el-divider>
+        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="demo-ruleForm">
+            <el-form-item prop="userId">
+                <el-input v-model="ruleForm.userId" placeholder="账号"></el-input>
+            </el-form-item>
+            <el-form-item prop="password">
+                <el-input v-model="ruleForm.password" placeholder="密码"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" style="width: 100%;" @click="submitForm('ruleForm')">{{choose?'登&nbsp;&nbsp;&nbsp;&nbsp;录':'注&nbsp;&nbsp;&nbsp;&nbsp;册'}}</el-button>
+            </el-form-item>
+        </el-form>
+        <p style="text-align: right;">
+            <el-link type="info" :underline="false" @click="choose=!choose">{{choose?'注&nbsp;&nbsp;&nbsp;&nbsp;册':'登&nbsp;&nbsp;&nbsp;&nbsp;录'}}</el-link>
+        </p>
+    </form>
+</div>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+GET http://localhost:8085/test?name=99
+Accept: application/json
+
+###
+POST http://localhost:8085/test
+Content-Type: application/json
+
+{
+  "name": "test",
+  "value": "test2"
+}
+
+###
