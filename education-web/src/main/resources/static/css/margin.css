@@ -1,0 +1,232 @@
+html, body {
+    margin: 0px auto;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#margin {
+    padding-top: 100px;
+}
+
+#margin .container {
+    margin: auto;
+    /*padding: 20px;*/
+    width: 1000px;
+    height: 600px;
+    /*margin-top: 50px!important;*/
+    /*border: 1px solid #e6e6e6;*/
+    /*border-radius: 5px;*/
+
+}
+
+#margin .el-menu,
+#margin .el-card__body {
+    /* padding: 20px; */
+    padding: 0px;
+    height: 100%;
+}
+
+#margin .body_m {
+    padding: 0px;
+    height: -moz-calc(100% - 66px) !important;
+    height: -webkit-calc(100% - 66px) !important;
+    height: calc(100% - 66px) !important;
+}
+
+#margin .el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 120px;
+    /*min-height: 400px;*/
+}
+
+/*#margin .el-table__body,*/
+/*#margin .el-menu-vertical-demo:not(.el-menu--collapse),*/
+
+#margin .comment-body {
+    height: -moz-calc(100% - 8px) !important;
+    height: -webkit-calc(100% - 8px) !important;
+    height: calc(100% - 8px) !important;
+}
+
+#margin .template-body {
+    padding: 0px;
+    height: -moz-calc(100% - 40px) !important;
+    height: -webkit-calc(100% - 40px) !important;
+    height: calc(100% - 40px) !important;
+}
+
+#margin .comment-body {
+    margin-top: 8px;
+    float: left;
+    width: -moz-calc(100% - 125px);
+    width: -webkit-calc(100% - 125px);
+    width: calc(100% - 125px);
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+#margin ::-webkit-scrollbar {
+    width: 3px !important;
+    height: 3px !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/*#margin ::-webkit-scrollbar-thumb,*/
+/*#margin ::-webkit-scrollbar-track,*/
+/*#margin ::-webkit-scrollbar,*/
+/*#margin ::-webkit-scrollbar-button{*/
+/*    width: 3px!important;*/
+/*}*/
+/*定义滚动条轨道 内阴影+圆角*/
+#margin ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.09) !important;
+    border-radius: 10px !important;
+    background-color: rgba(175, 169, 169, 0.58) !important;
+}
+
+/*定义滑块 内阴影+圆角*/
+#margin ::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .1) !important;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1) !important;
+    background-color: #f6f2f2 !important;
+}
+
+.el-scrollbar__wrap {
+    overflow-x: hidden;
+}
+
+#margin .textA .el-textarea__inner {
+    height: 320px;
+}
+
+#margin .comment-body .active1 {
+    width: 120px;
+    height: 120px;
+    padding-top: 22px;
+}
+
+/*#margin .active1 .el-card .is-always-shadow,*/
+/*#margin .active1 .el-card,*/
+/*#margin .active1 .el-message,*/
+/*#margin .active1 .el-card__body {*/
+/*    width: 120px!important;*/
+/*    float: left!important;*/
+/*}*/
+
+/*#margin .active1 .el-card__body {*/
+/*    width: 80px !important;*/
+/*}*/
+#margin .active1 .el-card{
+    text-align: center;
+    float: left !important;
+    width: 140px !important;
+    height: 170px !important;
+    margin-left: 60px!important;;
+    margin-bottom: 30px;
+}
+
+#margin .active1 .clearfix:after {
+    clear: both;
+}
+
+#margin .active1 .el-divider--horizontal{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#margin .active1 .bottom {
+    margin-top: 0px;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-indent:1em;
+}
+/*.active1Item .el-popover--plain{*/
+/*    padding: 10px!important;*/
+/*}*/
+.active1Item{
+    font-size: 12px;
+    width: 120px!important;
+    min-width: 120px!important;
+    padding: 10px!important;
+}
+.el-card__header{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 13px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.el-select-dropdown__list {
+     padding-left: 0px;
+     margin-bottom: 16px;
+}
+.el-autocomplete-suggestion__list {
+    margin-bottom: 16px;
+}
+.el-autocomplete {
+    width:calc(100% - 60px) !important;
+    width:-moz-calc(100% - 60px) !important;
+    width:-webkit-calc(100% - 60px) !important;
+}
+#margin .comment-body .cover{
+    width: 140px;
+    height: 85px;
+    /*border-radius: 60px;*/
+    position: absolute;
+    /*background: rgba(0,0,0,0.11);*/
+    /*background: #dedede80;*/
+    /*color: #fb3939;*/
+    opacity: 0.6;
+    text-align: center;
+    /*left: 20px;*/
+    left: 0px;
+    bottom: -2px;
+    font-size: 40px;
+    /*line-height: 40px;*/
+    font-weight: bold;
+}
+
+#margin .comment-body .bacimg{
+    position: relative;
+}
+
+
+#margin .comment-body .image {
+    width: 90px !important;
+    height: 80px !important;
+}
+
+#margin .comment-body .bacimg .el-button.is-plain:focus,
+#margin .comment-body .bacimg .el-button.is-plain:hover {
+     border-color: #ffffff;
+     /*color: #409EFF; */
+}
+#margin .comment-body .bacimg .el-button:focus,
+#margin .comment-body .bacimg .el-button:hover {
+     border-color: #c6e2ff;
+     /*background-color: #ecf5ff; */
+}
+
+#margin .comment-body .bacimg .el-button {
+    border-radius: 0px;
+    border: 1px solid #dcdfe600;
+}

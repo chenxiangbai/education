@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>考试</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../element/element.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- 引入组件库 -->
+    <script type="text/javascript" src="../vue/vue.js"></script>
+    <script type="text/javascript" src="../element/element.js"></script>
+    <script type="text/javascript" src="../vue/axios.min.js"></script>
+</head>
+<body>
+<div id="index">
+<!--    <el-card class="box-card tops" style="float: left;z-index: 9999;">-->
+<!--        <div>-->
+<!--            {{timeM}}:{{timeS}}-->
+<!--        </div>-->
+<!--    </el-card>-->
+    <el-card class="box-card" shadow="always" style="margin-top:80px">
+        <div slot="header" class="clearfix">
+            <span>{{'第'+(node+1)+'题: '+list[node].title}}</span>
+            <!--            <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>-->
+        </div>
+        <el-scrollbar style="height:auto;max-height:300px;width:100%;">
+            <div v-if="list[node].space==''||!list[node].space">
+                <div v-for="(item,index) in list[node].options" :key="index" class="text item"
+                     :name="index+'1'">
+                    <el-button size="medium"
+                               class="myButton"
+                               :class="list[node].rih==index?list[node].correct==list[node].rih?'el-button--success disableHover':'el-button--danger disableHover':list[node].disable?'disableHover':''"
+                               plain
+                               @click="clickButton(index)">
+                        {{index + '. ' + item }}
+                    </el-button>
+                </div>
+            </div>
+<!--            :disabled="list[node].textDisable && list[node].textarea!=''"-->
+            <el-input
+                    v-else
+                    type="textarea"
+                    :rows="13"
+                    :class="list[node].textColor"
+                    placeholder="请输入内容"
+                    @input="test"
+                    v-model="list[node].textarea">
+            </el-input>
+        </el-scrollbar>
+        <div class="footer">
+            <el-button type="success" @click="previous" :disabled="node==0">上一题</el-button>
+            <span style="margin-left: 250px;font-size: 28px;color: #ff8d00;">{{timeM}}:{{timeS}}</span>
+            <el-button type="primary" style="float: right;" @click="next" >{{node+1==list.length?'提交':'下一题'}}</el-button>
+            <div class="footer-description">
+                <el-divider content-position="left"><a @click="question"><i
+                        class="el-icon-view" :class="list[node].disable?'green':'red'"></i></a>
+                </el-divider>
+                <div v-if="list[node].disable" v-html="list[node].description" class="description"></div>
+            </div>
+
+        </div>
+    </el-card>
+</div>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

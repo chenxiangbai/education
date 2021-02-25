@@ -1,0 +1,13 @@
+body {
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.disableHover {
+    pointer-events: none!important;
+}
+
+.el-scrollbar__bar.is-vertical {
+    right: -10px!important;
+}
